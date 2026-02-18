@@ -18,6 +18,7 @@ interface Project {
   metric?: string;
   icon: React.ElementType;
   featured?: boolean;
+  link?: string;
 }
 
 const projects: Project[] = [
@@ -28,27 +29,31 @@ const projects: Project[] = [
     tech: ["Next.js", "Supabase Auth", "RLS"],
     description:
       "De herramienta interna a SaaS. ERP de gestión deportiva con control de acceso biométrico y finanzas.",
-    metric: "Gestiona operaciones diarias de un gimnasio real con +100 usuarios.",
+    metric:
+      "Gestiona operaciones diarias de un gimnasio real con +60 usuarios.",
     icon: Users,
     featured: true,
+    link: "https://fitgym-app.com/login",
   },
   {
     title: "Hardware Store POS",
     status: "En Producción",
     statusColor: "text-green-400",
-    tech: ["Supabase Realtime", "React Query"],
+    tech: ["Supabase Realtime", "React Query", "API", "Sunat"],
     description:
-      "Punto de venta de alta velocidad. Sincronización de inventario en tiempo real para reducir colas.",
+      "Sistema POS especializado para ferreterías con facturación electrónica.",
     icon: ShoppingCart,
+    link: "https://ferreteria2-0.vercel.app/",
   },
   {
-    title: "Real Estate Geo-Engine",
-    status: "En Producción",
-    statusColor: "text-green-400",
+    title: "Real Estate Mi Hogar",
+    status: "En Desarrollo",
+    statusColor: "text-blue-400",
     tech: ["Mapbox", "GeoJSON", "Filtros Avanzados"],
     description:
       "Búsqueda de propiedades geoespacial estilo Zillow optimizada para el mercado local de Lima.",
     icon: Globe,
+    link: "https://inmobiliaria-ashen-one.vercel.app/",
   },
 ];
 
@@ -98,6 +103,9 @@ const BentoProjects = () => {
               className={`glass-card-hover p-6 md:p-8 group cursor-pointer ${
                 project.featured ? "md:col-span-2" : ""
               }`}
+              onClick={() =>
+                project.link && window.open(project.link, "_blank")
+              }
             >
               <div className="flex items-start justify-between mb-5">
                 <div className="flex items-center gap-3">
@@ -108,7 +116,9 @@ const BentoProjects = () => {
                     <h3 className="text-lg font-semibold text-foreground">
                       {project.title}
                     </h3>
-                    <span className={`text-xs font-medium ${project.statusColor}`}>
+                    <span
+                      className={`text-xs font-medium ${project.statusColor}`}
+                    >
                       ● {project.status}
                     </span>
                   </div>

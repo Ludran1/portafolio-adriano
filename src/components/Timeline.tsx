@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Building2, Code, Rocket } from "lucide-react";
+import { Book, Building2, Code, Rocket } from "lucide-react";
 
 const events = [
   {
@@ -10,18 +10,25 @@ const events = [
     icon: Building2,
   },
   {
-    period: "Hace 4 meses",
+    period: "Hace 6 meses",
     title: "El pivot a código",
     description:
       "Detecté ineficiencias operativas. Empecé a programar soluciones propias como autodidacta potenciado con IA.",
     icon: Code,
   },
   {
-    period: "Hoy",
-    title: "Escalando a SaaS",
+    period: "Hace 1 mes",
+    title: "Escalado a SaaS",
     description:
-      "Escalo FitGym OS a SaaS Multi-tenant y estudio Ingeniería de Software formalmente.",
+      "Escale FitGym OS a SaaS Multi-tenant.",
     icon: Rocket,
+  },
+  {
+    period: "Hoy",
+    title: "Estudiando Informatica",
+    description:
+      "Ingrese a Cibertec para fortalecer mis conocimientos sin descuidar mi aprendizaje autodidacta",
+    icon: Book,
   },
 ];
 

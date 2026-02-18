@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# Portfolio - Adriano Lujan
 
-## Project info
+## Descripción
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Portafolio personal de Adriano Lujan, Product Engineer. Este proyecto exhibe mi experiencia combinando operaciones comerciales con ingeniería de software, destacando proyectos SaaS y habilidades técnicas.
 
-## How can I edit this code?
+## Tech Stack
 
-There are several ways of editing your application.
+### Core Engineering
 
-**Use Lovable**
+- **Vite**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **shadcn-ui**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### Herramientas Creativas y de IA
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Antigravity AI**
+- **Lovable AI**
+- **Framer Motion**
+- **Figma**
+- **Claude Code**
 
-**Use your preferred IDE**
+## Proyectos Destacados
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1.  **FitGym SaaS Platform**
+    - ERP de gestión deportiva con control de acceso biométrico.
+    - _Link:_ [fitgym-app.com](https://fitgym-app.com/login)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2.  **Hardware Store POS**
+    - Sistema POS especializado para ferreterías con facturación electrónica.
+    - _Link:_ [ferreteria2-0.vercel.app](https://ferreteria2-0.vercel.app/)
 
-Follow these steps:
+3.  **Real Estate Mi Hogar**
+    - Búsqueda de propiedades geoespacial estilo Zillow para el mercado local.
+    - _Link:_ [inmobiliaria-ashen-one.vercel.app](https://inmobiliaria-ashen-one.vercel.app/)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Instalación y Desarrollo
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1.  Clonar el repositorio:
 
-# Step 3: Install the necessary dependencies.
-npm i
+    ```bash
+    git clone https://github.com/Ludran1/portafolio-adriano.git
+    cd portafolio-adriano
+    ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+2.  Instalar dependencias:
 
-**Edit a file directly in GitHub**
+    ```bash
+    npm install
+    ```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3.  Correr el servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
 
-**Use GitHub Codespaces**
+## Contacto
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- **LinkedIn:** [Adriano Lujan](https://www.linkedin.com/in/adriano-lujan-795211185/)
+- **GitHub:** [Ludran1](https://github.com/Ludran1)

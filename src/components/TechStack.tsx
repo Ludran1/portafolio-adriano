@@ -9,9 +9,10 @@ const coreStack = [
 ];
 
 const creativeStack = [
-  { name: "Cursor AI", category: "AI Dev" },
+  { name: "Antigravity", category: "AI Dev" },
+  { name: "Lovable AI", category: "AI Dev" },
   { name: "Figma", category: "UI Design" },
-  { name: "Adobe Premiere", category: "Video" },
+  { name: "Claude code", category: "Agents AI" },
   { name: "Framer Motion", category: "Animation" },
 ];
 

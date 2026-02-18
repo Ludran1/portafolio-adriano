@@ -12,7 +12,7 @@ const Footer = () => {
 
         <div className="flex justify-center gap-5">
           <a
-            href="https://github.com"
+            href="https://github.com/Ludran1"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-11 w-11 items-center justify-center rounded-xl border border-border text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
@@ -21,7 +21,7 @@ const Footer = () => {
             <Github size={20} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/adriano-lujan-795211185/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-11 w-11 items-center justify-center rounded-xl border border-border text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
@@ -30,7 +30,7 @@ const Footer = () => {
             <Linkedin size={20} />
           </a>
           <a
-            href="mailto:hello@example.com"
+            href="mailto:adriano422lujan@gmail.com"
             className="flex h-11 w-11 items-center justify-center rounded-xl border border-border text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
             aria-label="Email"
           >
