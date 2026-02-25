@@ -19,6 +19,7 @@ interface Project {
   icon: React.ElementType;
   featured?: boolean;
   link?: string;
+  bgImage?: string;
 }
 
 const projects: Project[] = [
@@ -34,9 +35,10 @@ const projects: Project[] = [
     icon: Users,
     featured: true,
     link: "https://fitgym-app.com/login",
+    bgImage: "https://cykktfmtkcywuenpjsaz.supabase.co/storage/v1/object/public/logos/captura-fitgym.png",
   },
   {
-    title: "Hardware Store POS",
+    title: "Ferre-POS",
     status: "En Producción",
     statusColor: "text-green-400",
     tech: ["Supabase Realtime", "React Query", "API", "Sunat"],
@@ -44,6 +46,7 @@ const projects: Project[] = [
       "Sistema POS especializado para ferreterías con facturación electrónica.",
     icon: ShoppingCart,
     link: "https://ferreteria2-0.vercel.app/",
+    bgImage: "https://cykktfmtkcywuenpjsaz.supabase.co/storage/v1/object/public/logos/Captura-ferrepos.png",
   },
   {
     title: "Real Estate Mi Hogar",
@@ -100,14 +103,45 @@ const BentoProjects = () => {
             <motion.div
               key={i}
               variants={item}
-              className={`glass-card-hover p-6 md:p-8 group cursor-pointer ${
+              className={`glass-card-hover p-6 md:p-8 group cursor-pointer relative overflow-hidden ${
                 project.featured ? "md:col-span-2" : ""
               }`}
               onClick={() =>
                 project.link && window.open(project.link, "_blank")
               }
             >
-              <div className="flex items-start justify-between mb-5">
+              {project.bgImage && project.featured && (
+                <img
+                  src={project.bgImage}
+                  alt=""
+                  className="absolute z-0 pointer-events-none"
+                  style={{
+                    right: 0,
+                    top: "50%",
+                    transform: "translateY(-50%)",
+                    height: "100%",
+                    width: "auto",
+                    opacity: 0.3,
+                    maskImage: "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.6) 100%)",
+                    WebkitMaskImage: "linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.6) 100%)",
+                    borderRadius: "8px",
+                  }}
+                />
+              )}
+              {project.bgImage && !project.featured && (
+                <div
+                  className="absolute inset-0 z-0"
+                  style={{
+                    backgroundImage: `url(${project.bgImage})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center top",
+                    opacity: 0.2,
+                    maskImage: "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 90%)",
+                    WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 90%)",
+                  }}
+                />
+              )}
+              <div className="flex items-start justify-between mb-5 relative z-10">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-muted">
                     <project.icon size={20} className="text-primary" />
@@ -129,17 +163,17 @@ const BentoProjects = () => {
                 />
               </div>
 
-              <p className="text-muted-foreground mb-5 leading-relaxed">
+              <p className="text-muted-foreground mb-5 leading-relaxed relative z-10">
                 {project.description}
               </p>
 
               {project.metric && (
-                <p className="text-sm text-primary/80 mb-5 font-medium">
+                <p className="text-sm text-primary/80 mb-5 font-medium relative z-10">
                   📊 {project.metric}
                 </p>
               )}
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 relative z-10">
                 {project.tech.map((t) => (
                   <span
                     key={t}

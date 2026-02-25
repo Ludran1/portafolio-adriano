@@ -13,7 +13,6 @@ const creativeStack = [
   { name: "Lovable AI", category: "AI Dev" },
   { name: "Figma", category: "UI Design" },
   { name: "Claude code", category: "Agents AI" },
-  { name: "Framer Motion", category: "Animation" },
 ];
 
 const container = {

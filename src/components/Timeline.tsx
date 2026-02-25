@@ -16,20 +16,28 @@ const events = [
       "Detecté ineficiencias operativas. Empecé a programar soluciones propias como autodidacta potenciado con IA.",
     icon: Code,
   },
+    {
+    period: "Enero 2026",
+    title: "Estudiante de Informatica",
+    description:
+      "Ingrese a Cibertec para fortalecer mis conocimientos sin descuidar mi aprendizaje autodidacta",
+    icon: Book,
+  },
   {
-    period: "Hace 1 mes",
+    period: "Enero 2026",
     title: "Escalado a SaaS",
     description:
       "Escale FitGym OS a SaaS Multi-tenant.",
     icon: Rocket,
   },
   {
-    period: "Hoy",
-    title: "Estudiando Informatica",
+    period: "Febrero 2026",
+    title: "Desarrolle Ferre-POS",
     description:
-      "Ingrese a Cibertec para fortalecer mis conocimientos sin descuidar mi aprendizaje autodidacta",
-    icon: Book,
+      "Ferre-POS, es un sistema POS especializado para ferreterías con facturación electrónica desarrollada en tiempo record gracias a la IA.",
+    icon: Building2,
   },
+
 ];
 
 const Timeline = () => {
