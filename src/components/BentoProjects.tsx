@@ -29,9 +29,9 @@ const projects: Project[] = [
     statusColor: "text-yellow-400",
     tech: ["Next.js", "Supabase Auth", "RLS"],
     description:
-      "De herramienta interna a SaaS. ERP de gestión deportiva con control de acceso biométrico y finanzas.",
+      "Sistema SaaS. ERP de gestión deportiva con control de acceso biométrico y finanzas.",
     metric:
-      "Gestiona operaciones diarias de un gimnasio real con +60 usuarios.",
+      "Gestiona operaciones reales con +60 usuarios.",
     icon: Users,
     featured: true,
     link: "https://fitgym-app.com/login",
